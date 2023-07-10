@@ -1,0 +1,22 @@
+{
+  "name": "Youtube Agreement Auto Accepter",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Youtube Agreement Auto Accepter",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+  
+}
